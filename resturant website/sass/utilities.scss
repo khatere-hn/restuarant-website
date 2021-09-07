@@ -1,0 +1,489 @@
+.clearfix {
+    @include clearfix;
+}
+
+//el_center
+.p_relative {
+    position: relative;
+}
+
+//display
+
+.d_flex{
+    display: flex;
+}
+
+.d_none{
+    display: none;
+}
+
+.d_block{
+    display: block;
+}
+
+
+.justify_content_center{
+    justify-content: center;
+}
+
+.alin_item_center{
+    align-items: center;
+}
+
+
+.el_center_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center_marg {
+    margin: 0 auto;
+}
+
+.vertical_center {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.horizental_center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// colors
+.bg_dark_blue {
+    background-color: $bg_dark_blue;
+}
+
+.bg_red {
+    background-color: $bg_red;
+}
+
+.bg_light-green {
+    background-color: $bg_light-green;
+}
+
+.bg_blue {
+    background-color: $bg_blue;
+}
+
+.bg_gray {
+    background-color: $bg_gray;
+}
+
+.bg_orange {
+    background-color: $bg_orange;
+}
+
+.bg_dark {
+    background-color: $bg_dark;
+}
+
+.bg_dark-purple {
+    background-color: $bg_dark-purple;
+}
+
+.direction-rtl {
+    direction: rtl;
+    [class^="col-"] {
+        float: right;
+    }
+    &:not(:first-child) {
+        margin-right: $gutter;
+    }
+}
+
+.text_center {
+    text-align: center;
+}
+
+// margins
+.m {
+    &_1 {
+        margin: $margin_size_horizental;
+    }
+    &_2 {
+        margin: 2 * $margin_size_horizental;
+    }
+    &_3 {
+        margin: 3 * $margin_size_horizental;
+    }
+    &_4 {
+        margin: 4 * $margin_size_horizental;
+    }
+    &_5 {
+        margin: 5 * $margin_size_horizental;
+    }
+    &_6 {
+        margin: 6 * $margin_size_horizental;
+    }
+    &_7 {
+        margin: 7 * $margin_size_horizental;
+    }
+    &_8 {
+        margin: 8 * $margin_size_horizental;
+    }
+    &_9 {
+        margin: 9 * $margin_size_horizental;
+    }
+    &_10 {
+        margin: 10 * $margin_size_horizental;
+    }
+    &r {
+        &_0{
+            margin-right: 0px !important;
+        }
+        &_1 {
+            margin-right: $margin_size_horizental;
+        }
+        &_2 {
+            margin-right: 2 * $margin_size_horizental;
+        }
+        &_3 {
+            margin-right: 3 * $margin_size_horizental;
+        }
+        &_4 {
+            margin-right: 4 * $margin_size_horizental;
+        }
+        &_5 {
+            margin-right: 5 * $margin_size_horizental;
+        }
+        &_6 {
+            margin-right: 6 * $margin_size_horizental;
+        }
+        &_7 {
+            margin-right: 7 * $margin_size_horizental;
+        }
+        &_8 {
+            margin-right: 8 * $margin_size_horizental;
+        }
+        &_9 {
+            margin-right: 9 * $margin_size_horizental;
+        }
+        &_10 {
+            margin-right: 10 * $margin_size_horizental;
+        }
+    }
+    &l {
+        &_1 {
+            margin-left: $margin_size_horizental;
+        }
+        &_2 {
+            margin-left: 2 * $margin_size_horizental;
+        }
+        &_3 {
+            margin-left: 3 * $margin_size_horizental;
+        }
+        &_4 {
+            margin-left: 4 * $margin_size_horizental;
+        }
+        &_5 {
+            margin-left: 5 * $margin_size_horizental;
+        }
+        &_6 {
+            margin-left: 6 * $margin_size_horizental;
+        }
+        &_7 {
+            margin-left: 7 * $margin_size_horizental;
+        }
+        &_8 {
+            margin-left: 8 * $margin_size_horizental;
+        }
+        &_9 {
+            margin-left: 9 * $margin_size_horizental;
+        }
+        &_10 {
+            margin-left: 10 * $margin_size_horizental;
+        }
+    }
+    &t {
+        &_1 {
+            margin-top: $margin_size_vertical;
+        }
+        &_2 {
+            margin-top: 2 * $margin_size_vertical;
+        }
+        &_3 {
+            margin-top: 3 * $margin_size_vertical;
+        }
+        &_4 {
+            margin-top: 4 * $margin_size_vertical;
+        }
+        &_5 {
+            margin-top: 5 * $margin_size_vertical;
+        }
+        &_6 {
+            margin-top: 6 * $margin_size_vertical;
+        }
+        &_7 {
+            margin-top: 7 * $margin_size_vertical;
+        }
+        &_8 {
+            margin-top: 8 * $margin_size_vertical;
+        }
+        &_9 {
+            margin-top: 9 * $margin_size_vertical;
+        }
+        &_10 {
+            margin-top: 10 * $margin_size_vertical;
+        }
+    }
+    &b {
+        &_1 {
+            margin-bottom: $margin_size_vertical;
+        }
+        &_2 {
+            margin-bottom: 2 * $margin_size_vertical;
+        }
+        &_3 {
+            margin-bottom: 3 * $margin_size_vertical;
+        }
+        &_4 {
+            margin-bottom: 4 * $margin_size_vertical;
+        }
+        &_5 {
+            margin-bottom: 5 * $margin_size_vertical;
+        }
+        &_6 {
+            margin-bottom: 6 * $margin_size_vertical;
+        }
+        &_7 {
+            margin-bottom: 7 * $margin_size_vertical;
+        }
+        &_8 {
+            margin-bottom: 8 * $margin_size_vertical;
+        }
+        &_9 {
+            margin-bottom: 9 * $margin_size_vertical;
+        }
+        &_10 {
+            margin-bottom: 10 * $margin_size_vertical;
+        }
+    }
+}
+
+//padding
+.p {
+    &_1 {
+        padding: $padding_size_horizental;
+    }
+    &_2 {
+        padding: 2 * $padding_size_horizental;
+    }
+    &_3 {
+        padding: 3 * $padding_size_horizental;
+    }
+    &_4 {
+        padding: 4 * $padding_size_horizental;
+    }
+    &_5 {
+        padding: 5 * $padding_size_horizental;
+    }
+    &_6 {
+        padding: 6 * $padding_size_horizental;
+    }
+    &_7 {
+        padding: 7 * $padding_size_horizental;
+    }
+    &_8 {
+        padding: 8 * $padding_size_horizental;
+    }
+    &_9 {
+        padding: 9 * $padding_size_horizental;
+    }
+    &_10 {
+        padding: 10 * $padding_size_horizental;
+    }
+    &r {
+        &_1 {
+            padding-right: $padding_size_horizental;
+        }
+        &_2 {
+            padding-right: 2 * $padding_size_horizental;
+        }
+        &_3 {
+            padding-right: 3 * $padding_size_horizental;
+        }
+        &_4 {
+            padding-right: 4 * $padding_size_horizental;
+        }
+        &_5 {
+            padding-right: 5 * $padding_size_horizental;
+        }
+        &_6 {
+            padding-right: 6 * $padding_size_horizental;
+        }
+        &_7 {
+            padding-right: 7 * $padding_size_horizental;
+        }
+        &_8 {
+            padding-right: 8 * $padding_size_horizental;
+        }
+        &_9 {
+            padding-right: 9 * $padding_size_horizental;
+        }
+        &_10 {
+            padding-right: 10 * $padding_size_horizental;
+        }
+    }
+    &l {
+        &_1 {
+            padding-left: $padding_size_horizental;
+        }
+        &_2 {
+            padding-left: 2 * $padding_size_horizental;
+        }
+        &_3 {
+            padding-left: 3 * $padding_size_horizental;
+        }
+        &_4 {
+            padding-left: 4 * $padding_size_horizental;
+        }
+        &_5 {
+            padding-left: 5 * $padding_size_horizental;
+        }
+        &_6 {
+            padding-left: 6 * $padding_size_horizental;
+        }
+        &_7 {
+            padding-left: 7 * $padding_size_horizental;
+        }
+        &_8 {
+            padding-left: 8 * $padding_size_horizental;
+        }
+        &_9 {
+            padding-left: 9 * $padding_size_horizental;
+        }
+        &_10 {
+            padding-left: 10 * $padding_size_horizental;
+        }
+    }
+    &t {
+        &_1 {
+            padding-top: $padding_size_vertical;
+        }
+        &_2 {
+            padding-top: 2 * $padding_size_vertical;
+        }
+        &_3 {
+            padding-top: 3 * $padding_size_vertical;
+        }
+        &_4 {
+            padding-top: 4 * $padding_size_vertical;
+        }
+        &_5 {
+            padding-top: 5 * $padding_size_vertical;
+        }
+        &_6 {
+            padding-top: 6 * $padding_size_vertical;
+        }
+        &_7 {
+            padding-top: 7 * $padding_size_vertical;
+        }
+        &_8 {
+            padding-top: 8 * $padding_size_vertical;
+        }
+        &_9 {
+            padding-top: 9 * $padding_size_vertical;
+        }
+        &_10 {
+            padding-top: 10 * $padding_size_vertical;
+        }
+    }
+    &b {
+        &_1 {
+            padding-bottom: $padding_size_vertical;
+        }
+        &_2 {
+            padding-bottom: 2 * $padding_size_vertical;
+        }
+        &_3 {
+            padding-bottom: 3 * $padding_size_vertical;
+        }
+        &_4 {
+            padding-bottom: 4 * $padding_size_vertical;
+        }
+        &_5 {
+            padding-bottom: 5 * $padding_size_vertical;
+        }
+        &_6 {
+            padding-bottom: 6 * $padding_size_vertical;
+        }
+        &_7 {
+            padding-bottom: 7 * $padding_size_vertical;
+        }
+        &_8 {
+            padding-bottom: 8 * $padding_size_vertical;
+        }
+        &_9 {
+            padding-bottom: 9 * $padding_size_vertical;
+        }
+        &_10 {
+            padding-bottom: 10 * $padding_size_vertical;
+        }
+    }
+}
+
+.h {
+    &_1 {
+        height: 25vh;
+    }
+    &_2 {
+        height: 50vh;
+    }
+    &_3 {
+        height: 75vh;
+    }
+    &_4 {
+        height: 100vh;
+    }
+}
+.float{
+    &_right{
+        float: right;
+    }
+    &_left{
+        float: left;
+    }
+}
+
+.res_img{
+    width:100%;
+    height: auto;
+
+}
+.res1_img{
+    width:75%;
+    height: auto;
+    border-radius: 10px;
+    @media all and (max-width:60.06em) {
+      width: 80%!important;
+    }
+    @media all and (max-width:48em) {
+        width: 85%!important;
+    }
+    @media all and (max-width:44.87em) {
+        width: 90%!important;
+    }
+}
+.res2_img{
+    width:80%;
+    height: auto;
+    @media all and (max-width:42.5em) {
+        width: 100%!important;
+        order:1!important;
+    }
+}
+.pos_img{
+    position:relative;
+    left:27.5%;
+}
+.pos1_img{
+    position: relative;
+    left: 13%;
+}
+
